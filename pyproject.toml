@@ -1,0 +1,14 @@
+[project]
+name = "xml-orgrfc"
+version = "0.1.0"
+description = "Reverse convert RFC7991 XML v3 to org-export-rfc format"
+authors = [{ name = "Christian Hopps", email = "chopps@chopps.org"}]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+xml-orgrfc = "xml_orgrfc.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
