@@ -429,7 +429,7 @@ def top_level(root):
                     convert_xml_front(child, lines, 0)
                 keylist = [f'"{x}"' for x in glb.keywords]
                 if keylist:
-                    lines.append(f'#+RFC_KEYWORDS: ({" ".join(keylist)})\n')
+                    lines.append(f'#+RFC_KEYWORDS: ({" ".join(reversed(keylist))})\n')
             elif elt.tag == "middle":
                 logging.debug("processing middle tag")
                 for child in elt:
